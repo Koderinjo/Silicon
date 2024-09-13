@@ -12,12 +12,13 @@
     --color-lightBG: #F3F6FF;
 
     --color-primary: #6366F1;
+    --color-gradient: linear-gradient(to right, #6366F1 0%, #8B5CF6 50%, #D946EF 100%); /* Asked ChatGPT how to make a gradient variable, this line is copied from ChatGPT. */
 }
 
 
 * {
     margin: 0;
-    padding: 0;
+    padding: 0; 
     box-sizing: border-box;
 }
 
