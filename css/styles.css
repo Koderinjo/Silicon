@@ -29,6 +29,10 @@
     --shadow-L: 0px 4.8px 24.4px -6px rgba(19, 16, 34, 0.1), 0px 4px 13px -2px rgba(19, 16, 34, 0.06);
     --shadow-brand-btn: 0px 8px 18px -8px rgba(99, 102, 241, 0.9);
     --shadow-seconday: 0px 8px 18px -8px rgba(19, 16, 34, 0.15);
+
+    /* Miscellaneous*/
+    --container-padding: 1rem;
+    --transition-time: all 0.2s;
 }
 
 
@@ -48,6 +52,16 @@ body {
     font-size: 16px
 }
 
+.container {
+    width: 100%;
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
 a {
     color: var(--color-primary);
     text-decoration: none;
@@ -56,17 +70,6 @@ a:hover {
     color: var(--color-primary);
     text-decoration: underline;
 }
-
-.nav-link {
-    color: var(--color-heading-dark);
-    font-weight: 600;
-    text-decoration: none;
-}
-.nav-link:hover {
-    color: var(--color-primary);
-    text-decoration: underline;
-}
-
 
 .btn-primary {
     background-color:var(--color-primary) ;
@@ -92,7 +95,7 @@ a:hover {
 .btn-menu {
     border: none;
     background-color: transparent;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .btn-toggle-switch {
@@ -103,13 +106,13 @@ a:hover {
 }
 
 .btn-toggle-switch .label {
-    /* display: none; */
+    display: none;
 }
 
 .toggle-switch {
     position: relative;
     display: inline-block;
-    width: 45px;
+    width: 48px;
     height: 25px;
 }
 
@@ -157,3 +160,40 @@ a:hover {
 .toggle-switch .slider.round:before {
     border-radius: 50%;
 }
+
+.slider.round {
+    box-shadow: var(--shadow-brand-btn);
+}
+
+.navbar {
+    display: none;
+}
+
+.nav-link {
+    color: var(--color-heading-dark);
+    font-weight: 600;
+    text-decoration: none;
+}
+.nav-link:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+.active {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+#signin {
+    display: none;
+}
+
+header .container {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 2rem;
+    align-items: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
