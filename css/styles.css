@@ -186,6 +186,7 @@ a:hover {
 
 #signin {
     display: none;
+   
 }
 
 header .container {
@@ -197,3 +198,45 @@ header .container {
     padding-bottom: 0.5rem;
 }
 
+@media (width >= 768px) {
+    .container {
+        max-width: 720px;   
+    }
+
+    .btn-toggle-switch .label {
+        display: block;
+    }
+
+    .slider.round {
+        box-shadow:none;
+    }
+
+    header .container {
+        gap: 3rem;
+    }
+}
+
+@media (width >= 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+
+    header .container {
+        grid-template-columns: auto 1fr auto auto;
+        gap: 3rem;  
+    }
+
+    .navbar {
+        display: block;
+    }
+
+    .btn-menu {
+        display: none;
+    }
+
+    #signin {
+        display: block;
+    }
+
+
+}
