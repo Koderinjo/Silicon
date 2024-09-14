@@ -36,6 +36,7 @@
     margin: 0;
     padding: 0; 
     box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
 
 }
 
@@ -55,6 +56,17 @@ a:hover {
     color: var(--color-primary);
     text-decoration: underline;
 }
+
+.nav-link {
+    color: var(--color-heading-dark);
+    font-weight: 600;
+    text-decoration: none;
+}
+.nav-link:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
 
 .btn-primary {
     background-color:var(--color-primary) ;
