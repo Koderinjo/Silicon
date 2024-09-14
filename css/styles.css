@@ -47,10 +47,26 @@ body {
 }
 
 a {
-    color: var(--color-navigation);
+    color: var(--color-primary);
     text-decoration: none;
 }
 a:hover {
     color: var(--color-primary);
     text-decoration: underline;
+}
+
+.btn-primary {
+    background-color:var(--color-primary) ;
+    color: white;
+    border-radius: 8px;
+    padding: 12px, 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.btn-primary:hover {
+    background-color: var(--color-muted);
+    color: white;
+    text-decoration: none;
 }

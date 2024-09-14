@@ -12,26 +12,26 @@
     <header>
         <div class="container">
 
-            <a href="index.html"><img src="images/sililogo.svg" alt="Silicon Logo"></a>
+            <a id="sililogo" href="index.html"><img src="images/sililogo.svg" alt="Silicon Logo"></a>
 
-            <nav>
+            <nav class="navbar">
                 <a href="#">Features</a>
             </nav>
 
-            <div>
+            <div id="darkmode-toggle" class="btn-toggle-switch">
                 <span class="label">Dark mode</span>
-            <label class="switch">
-                <input type="checkbox">
+            <label for="darkmode-switch" class="toggle-switch">
+                <input id="darkmode-switch" type="checkbox">
                 <span class="slider round"></span>
               </label>
             </div>
 
-            <a href="#">
+            <a id="signin" href="#" class="btn-primary">
                 <i class="fa-light fa-user"></i></i>
                 <span>Sign in / up</span>
             </a>
 
-            <button>
+            <button class="btn-menu">
                 <i class="fa-sharp fa-regular fa-bars"></i>
             </button>
             
