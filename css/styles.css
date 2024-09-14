@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 :root {
+
+    /* Grayscale Colors */
     --color-heading-dark: #0B0F19;
     --color-navigation: #33354D;
     --color-body: #565973;
@@ -11,8 +13,22 @@
     --color-secondary: #EFF2FC;
     --color-lightBG: #F3F6FF;
 
+    /* Brand Colors */
     --color-primary: #6366F1;
     --color-gradient: linear-gradient(to right, #6366F1 0%, #8B5CF6 50%, #D946EF 100%); /* Asked ChatGPT how to make a gradient variable, this line is copied from ChatGPT. */
+
+    /* System Colors */
+    --color-error: #EF4444;
+    --color-success: #22C55E;
+    --color-warning: #FFBA08;
+    --color-info: #4C82F7;
+
+    /* Shadows */
+    --shadow-S: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06), 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+    --shadow-M: 0px 4.4px 20px rgba(19, 16, 34, 0.05), 0px 4px 9px rgba(19, 16, 34, 0.03);
+    --shadow-L: 0px 4.8px 24.4px -6px rgba(19, 16, 34, 0.1), 0px 4px 13px -2px rgba(19, 16, 34, 0.06);
+    --shadow-brand-btn: 0px 8px 18px -8px rgba(99, 102, 241, 0.9);
+    --shadow-seconday: 0px 8px 18px -8px rgba(19, 16, 34, 0.15);
 }
 
 
