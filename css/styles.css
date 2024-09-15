@@ -53,7 +53,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 16px
+    font-size: 16px;
 }
 
 .wrapper {
@@ -94,6 +94,24 @@ a:hover {
 
 .btn-primary:hover {
     background-color: var(--color-muted);
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.btn-download-app {
+    background-color:var(--color-heading-dark) ;
+    color: var(--color-white);
+    border-radius: 4px;
+    padding: 8px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn-download-app:hover {
+    background-color: var(--color-navigation);
     color: var(--color-white);
     text-decoration: none;
 }
@@ -331,6 +349,9 @@ footer {
 }
 
 #hero {
+    background: rgb(99,102,241);
+    background: linear-gradient(0deg, rgba(99,102,241,0.1) 0%, rgba(218,70,239,0.05) 42%, rgba(241,244,253,0.07) 83%);
+    padding-bottom: 2rem;
     .container {
 
     }
@@ -340,17 +361,22 @@ footer {
 
         h1 {
             font-size: 56px;
-            font-weight: 800;    
+            font-weight: 800;
+            margin-bottom: 3rem;    
         }
     }
 
     .content {
         text-align: center;
         p {
+            font-size: 18px;
+            margin-bottom: 3rem;
 
         }
         .buttons {
-
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
         }
         .discover-more {
             display: flex;
@@ -358,6 +384,8 @@ footer {
             align-items: center;
             font-size: 14px;
             text-decoration: none;
+            justify-content: center;
+            margin-top: 2rem;
             
 
         }
