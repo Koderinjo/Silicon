@@ -56,6 +56,12 @@ body {
     font-size: 16px
 }
 
+.wrapper {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
 .container {
     width: 100%;
     padding-left: var(--container-padding);
@@ -204,6 +210,9 @@ header .container {
 
 footer {
     font-size: 14px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: var(--color-muted);
 
     .container {
         display: flex;
