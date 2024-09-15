@@ -72,7 +72,7 @@ body {
 }
 
 a {
-    color: var(--color-primary);
+    color: var(--color-body);
     text-decoration: none;
 }
 a:hover {
@@ -310,3 +310,61 @@ footer {
 
 }
 
+#hero {
+    .container {
+
+    }
+
+    .headline {
+        h1 {
+
+        }
+    }
+
+    .content {
+        p {
+
+        }
+        .buttons {
+
+        }
+        .discover-more {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            font-size: 14px;
+            text-decoration: none;
+        }
+    }
+
+    .images {
+        display: none;
+        .img-back {
+
+        }
+        .img-front {
+
+        }
+    }
+}
+
+.btn-circle {
+    display: inline-block;
+    width: 44px; 
+    height: 44px; 
+    border-radius: 50%;
+    background-color: var(--color-white); 
+    color: var(--color-heading-dark);
+    text-align: center;
+    line-height: 44px; 
+    font-size: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+                0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+  
+.btn-circle:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 
+                0 8px 24px rgba(0, 0, 0, 0.15);
+}
