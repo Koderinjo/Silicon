@@ -228,6 +228,13 @@ footer {
 
 #brands {
     display: none;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.5rem;
+    }
 }
 
 .brand-box {
@@ -265,15 +272,9 @@ footer {
 
     #brands {
         display: block;
-
-        .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
     }
 
-    #brand-1, #brand-2 {
+    #brand-5, #brand-6 {
         display: none;
     }
 
@@ -301,7 +302,7 @@ footer {
         display: block;
     }
 
-    #brand-1, #brand-2 {
+    #brand-5, #brand-6 {
         display: flex;
     }
 
