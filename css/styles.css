@@ -203,9 +203,13 @@ header .container {
 }
 
 footer {
+    font-size: 14px;
+
     .container {
         display: flex;
         justify-content: center;
+        gap: .5rem;
+        align-items: center;
     }
 
     .credit {
@@ -231,6 +235,13 @@ footer {
     header .container {
         gap: 3rem;
     }
+
+    footer {
+        .credit {
+            display: block;
+        }
+    }
+
 }
 
 @media (width >= 1400px) {
