@@ -273,6 +273,10 @@ footer {
         }
     }
 
+    #brand-1, #brand-2 {
+        display: none;
+    }
+
 }
 
 @media (width >= 1400px) {
@@ -296,5 +300,10 @@ footer {
     #signin {
         display: block;
     }
+
+    #brand-1, #brand-2 {
+        display: flex;
+    }
+
 }
 
