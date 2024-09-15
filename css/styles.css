@@ -202,6 +202,19 @@ header .container {
     padding-bottom: 0.5rem;
 }
 
+footer {
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .credit {
+        display: none;
+    }
+
+    
+}
+
 @media (width >= 768px) {
     .container {
         max-width: 720px;   
@@ -241,6 +254,5 @@ header .container {
     #signin {
         display: block;
     }
-
-
 }
+
