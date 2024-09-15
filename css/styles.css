@@ -228,6 +228,8 @@ footer {
 
 #brands {
     display: none;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 
     .container {
         display: flex;
