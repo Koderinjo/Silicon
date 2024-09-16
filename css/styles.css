@@ -52,9 +52,7 @@
 }
 
 header {
-    #sililogo {
-        padding-top: 1rem;
-    }
+   padding-top: 4px;
 }
 
 body {
@@ -70,6 +68,11 @@ body.dark {
     --color-heading:#ffffff;
     --color-body:#ffffff;
     --color-btn-circle: #ffffff05;
+    --color
+
+    a {
+        
+    }
 
     #discover-more {
         opacity: 70%;
@@ -138,7 +141,7 @@ a:hover {
 }
 
 .btn-download-app:hover {
-    background-color: var(--color-navigation);
+    background-color: var(--color-muted);
     text-decoration: none;
 }
 
