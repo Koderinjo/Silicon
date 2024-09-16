@@ -55,7 +55,7 @@ header {
     #sililogo {
         padding-top: 1rem;
     }
-  }
+}
 
 body {
     font-family: "Manrope", sans-serif;
@@ -63,9 +63,10 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
+    background-color: white;
 }
 body.dark {
-    background-color:#0B0F19;
+    background-color:#000000;
     --color-heading:#ffffff;
     --color-body:#ffffff;
     --color-btn-circle: #ffffff05;
