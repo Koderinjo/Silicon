@@ -61,14 +61,13 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
-    background-color: white;
+    
 }
 body.dark {
     background-color:#000000;
     --color-heading:#ffffff;
     --color-body:#ffffff;
     --color-btn-circle: #ffffff05;
-    --color
 
     a {
         
