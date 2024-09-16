@@ -2,8 +2,8 @@
 
 :root {
 
-    /* Grayscale Colors */
-    --color-heading-dark: #0B0F19;
+    /* Primary Colors */
+    --color-heading: #0B0F19;
     --color-navigation: #33354D;
     --color-body: #565973;
     --color-muted: #9397AD;
@@ -12,11 +12,12 @@
     --color-divider: #E2E5F1;
     --color-secondary: #EFF2FC;
     --color-lightBG: #F3F6FF;
+    --color-white: #ffffff;
 
     /* Brand Colors */
     --color-primary: #6366F1;
-    --color-gradient: linear-gradient(to right, #6366F1 0%, #8B5CF6 50%, #D946EF 100%); /* Asked ChatGPT how to make a gradient variable, this line is copied from ChatGPT. */
-
+    --color-gradient: linear-gradient(0deg, rgba(99,102,241,0.1) 0%, rgba(218,70,239,0.05) 42%, rgba(241,244,253,0.07) 83%);
+    
     /* System Colors */
     --color-error: #EF4444;
     --color-success: #22C55E;
@@ -33,7 +34,7 @@
     /* Miscellaneous*/
     --container-padding: 1rem;
     --transition-time: all 0.2s;
-    --color-white: #ffffff;
+    
 
     
 
@@ -55,6 +56,13 @@ body {
     font-style: normal;
     font-size: 16px;
 }
+body.dark {
+    background-color:#0B0F19;
+    --color-heading:#ffffff;
+    --color-body:#ffffff;
+
+}
+
 
 .wrapper {
     display: grid;
@@ -99,8 +107,7 @@ a:hover {
 }
 
 .btn-download-app {
-    background-color:var(--color-heading-dark) ;
-    color: var(--color-white);
+    background-color:var(--color-heading) ;
     border-radius: 4px;
     padding: 8px 20px;
     display: flex;
@@ -132,7 +139,7 @@ a:hover {
     line-height: 44px; 
     font-size: 12px;
     cursor: pointer;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--shadow-S);
     transition: box-shadow 0.3s ease;
 }
 .btn-circle:hover {
@@ -349,17 +356,24 @@ footer {
 }
 
 #hero {
-    background: rgb(99,102,241);
-    background: linear-gradient(0deg, rgba(99,102,241,0.1) 0%, rgba(218,70,239,0.05) 42%, rgba(241,244,253,0.07) 83%);
+    
+    background: var(--color-gradient);
     padding-bottom: 2rem;
-    .container {
 
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        @media (width >= 768px) {
+            
+        }
     }
 
     .headline {
         text-align: center;
 
         h1 {
+            color: var(--color-heading);
             font-size: 56px;
             font-weight: 800;
             margin-bottom: 3rem;    
@@ -369,6 +383,7 @@ footer {
     .content {
         text-align: center;
         p {
+            color: var(--color-body);
             font-size: 18px;
             margin-bottom: 3rem;
 
