@@ -439,6 +439,7 @@ footer {
             text-decoration: none;
             justify-content: center;
             margin-top: 2rem;
+            margin-bottom: 2rem;
 
             @media (width >= 768px) {
                 justify-content: flex-start;
@@ -460,14 +461,15 @@ footer {
             position: absolute;
             z-index: -10;
             bottom: 0;
-            right: 100px;
+            right: 95px;
+            height: 300px;
             
         }
         .img-front {
             position: absolute;
             z-index:-5;
             bottom: 0;
-            right: 0;
+            right: -35px;
             height: 375px;
         }   
     }
