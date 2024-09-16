@@ -13,6 +13,8 @@
     --color-secondary: #EFF2FC;
     --color-lightBG: #F3F6FF;
     --color-white: #ffffff;
+    --color-btn-circle: #ffffff;
+
 
     /* Brand Colors */
     --color-primary: #6366F1;
@@ -60,6 +62,16 @@ body.dark {
     background-color:#0B0F19;
     --color-heading:#ffffff;
     --color-body:#ffffff;
+    --color-btn-circle: #ffffff05;
+
+    #discover-more {
+        opacity: 70%;
+    }
+
+    #features {
+        opacity: 75%;
+    }
+    
 
 }
 
@@ -82,6 +94,7 @@ body.dark {
 a {
     color: var(--color-body);
     text-decoration: none;
+    
 }
 a:hover {
     color: var(--color-primary);
@@ -119,7 +132,6 @@ a:hover {
 
 .btn-download-app:hover {
     background-color: var(--color-navigation);
-    color: var(--color-white);
     text-decoration: none;
 }
 
@@ -134,7 +146,7 @@ a:hover {
     width: 44px; 
     height: 44px; 
     border-radius: 50%;
-    background-color: var(--color-white); 
+    background-color: var(--color-btn-circle); 
     color: var(--color-heading-dark);
     line-height: 44px; 
     font-size: 12px;
@@ -225,7 +237,7 @@ a:hover {
 }
 
 .nav-link {
-    color: var(--color-heading-dark);
+    color: var(--color-heading);
     font-weight: 600;
     text-decoration: none;
 }
