@@ -51,6 +51,10 @@
 
 }
 
+header {
+    background-color: inherit; /* Inherit the background color from the body */
+  }
+
 body {
     font-family: "Manrope", sans-serif;
     font-optical-sizing: auto;
@@ -121,7 +125,7 @@ a:hover {
 
 .btn-download-app {
     background-color:var(--color-heading) ;
-    border-radius: 4px;
+    border-radius: 8px;
     padding: 8px 20px;
     display: flex;
     justify-content: center;
@@ -372,28 +376,49 @@ footer {
     background: var(--color-gradient);
     padding-bottom: 2rem;
 
+    @media (width >= 768px) {
+        padding: 0;
+    }
+
     .container {
         display: grid;
+        gap: 2rem;
         grid-template-columns: 1fr;
+        grid-template-areas: "headline" "content";
 
         @media (width >= 768px) {
-            
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "headline headline" 
+                                  "content images"
         }
     }
 
     .headline {
+        grid-area: headline;
         text-align: center;
 
         h1 {
             color: var(--color-heading);
-            font-size: 56px;
+            font-size: 34.1px;
             font-weight: 800;
             margin-bottom: 3rem;    
+        }
+
+        @media (width >= 768px) {
+            h1 {
+                font-size: 44.3px;
+            }
         }
     }
 
     .content {
+        grid-area: content;
         text-align: center;
+
+        @media (width >= 768px) {
+            text-align: left;
+        }
+
         p {
             color: var(--color-body);
             font-size: 18px;
@@ -413,20 +438,33 @@ footer {
             text-decoration: none;
             justify-content: center;
             margin-top: 2rem;
-            
 
-        }
-        
+            @media (width >= 768px) {
+                justify-content: flex-start;
+            }
+
+        }      
     }
 
     .images {
+        position: relative;
+        grid-area: images;
         display: none;
-        .img-back {
 
+        @media (width >= 768px) {
+            display: block;
+        }
+
+        .img-back {
+            position: absolute;
+            z-index: -10;
+            bottom: 0;
         }
         .img-front {
-
-        }
+            position: absolute;
+            z-5;
+            bottom: 0;
+        }   
     }
 }
 
