@@ -429,6 +429,7 @@ footer {
             display: flex;
             flex-direction: column;
             gap: 1rem;
+
         }
         .discover-more {
             display: flex;
@@ -459,11 +460,15 @@ footer {
             position: absolute;
             z-index: -10;
             bottom: 0;
+            right: 100px;
+            
         }
         .img-front {
             position: absolute;
-            z-5;
+            z-index:-5;
             bottom: 0;
+            right: 0;
+            height: 375px;
         }   
     }
 }
