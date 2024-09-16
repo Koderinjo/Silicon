@@ -52,7 +52,9 @@
 }
 
 header {
-    background-color: inherit; /* Inherit the background color from the body */
+    #sililogo {
+        padding-top: 1rem;
+    }
   }
 
 body {
@@ -375,12 +377,15 @@ footer {
     
     background: var(--color-gradient);
     padding-bottom: 2rem;
+    overflow: hidden;
 
     @media (width >= 768px) {
         padding: 0;
     }
 
     .container {
+        position: relative;
+        overflow: hidden;
         display: grid;
         gap: 2rem;
         grid-template-columns: 1fr;
@@ -401,7 +406,8 @@ footer {
             color: var(--color-heading);
             font-size: 34.1px;
             font-weight: 800;
-            margin-bottom: 3rem;    
+            margin-bottom: 5rem;
+            margin-top: 2rem;    
         }
 
         @media (width >= 768px) {
@@ -427,7 +433,7 @@ footer {
         }
         .buttons {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             gap: 1rem;
 
         }
@@ -461,16 +467,17 @@ footer {
             position: absolute;
             z-index: -10;
             bottom: 0;
-            right: 95px;
-            height: 300px;
+            right: 110px;
+            width: 60%;
+            height: 98%;
             
         }
         .img-front {
             position: absolute;
             z-index:-5;
             bottom: 0;
-            right: -35px;
-            height: 375px;
+            right: 0;
+            width: 65%;
         }   
     }
 }
