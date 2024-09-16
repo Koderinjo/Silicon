@@ -53,6 +53,7 @@
 
 header {
    padding-top: 4px;
+   
 }
 
 body {
@@ -68,7 +69,11 @@ body.dark {
     --color-heading:#ffffff;
     --color-body:#ffffff;
     --color-btn-circle: #ffffff05;
-
+    
+    header {
+        background-color: #171717;
+    }
+    
     a {
         
     }
@@ -322,6 +327,7 @@ footer {
 
     .btn-toggle-switch .label {
         display: block;
+        color: #565973;
     }
 
     .slider.round {
