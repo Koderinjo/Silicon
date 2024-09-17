@@ -588,7 +588,7 @@ footer {
 .features-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap 2rem;
+    gap: 2rem;
 }
 
 .feature-item {
@@ -616,8 +616,8 @@ footer {
 .feature-item {
     h5 {
         font-size: 20px;
-        color: var(--color-body);
-        margin: 0 0 0.5 rem 0;
+        color: var(--color-heading);
+        margin-bottom: 1rem;
     }
 
     p {
