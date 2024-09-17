@@ -71,8 +71,8 @@ body.dark {
     --color-body:#ffffff;
     --color-btn-circle: #ffffff05;
 
-    a {
-        
+    header {
+        background-color: #1b1f29;
     }
 
     #discover-more {
@@ -84,9 +84,7 @@ body.dark {
     }
 }
 
-body.dark header {
-    background-color: #1b1f29;
-}
+
 
 
 
