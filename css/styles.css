@@ -14,6 +14,7 @@
     --color-lightBG: #F3F6FF;
     --color-white: #ffffff;
     --color-btn-circle: #ffffff;
+    --color-paragraph-secondary: #585C7B;
 
 
     /* Brand Colors */
@@ -70,6 +71,7 @@ body.dark {
     --color-heading:#ffffff;
     --color-body:#ffffff;
     --color-btn-circle: #ffffff05;
+    --color-paragraph-secondary: #ffffffb3;
 
     header {
         background-color: #1b1f29;
@@ -91,6 +93,7 @@ body.dark {
 }
 
 .container {
+    max-width: 540px;
     width: 100%;
     padding-left: var(--container-padding);
     padding-right: var(--container-padding);
@@ -397,11 +400,11 @@ footer {
 
     @media (width >= 768px) {
         padding: 0;
+        
     }
 
     .container {
         position: relative;
-        /* overflow: hidden; */
         display: grid;
         gap: 3rem;
         grid-template-columns: 1fr;
@@ -532,14 +535,20 @@ footer {
     }
 }
 
-.app-features {
-margin-top: 5rem;
+#app-features {
+margin-top: 2.5rem;
+margin-bottom: 2.5rem;
+
+    #features-paragraph {
+        text-align: center;
+    }
 
     h1 {
         grid-area: headline;
         font-size: 27.9px;
         color: var(--color-heading);
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
+        margin-top: 0;
         text-align: center;
     }
 
@@ -551,9 +560,9 @@ margin-top: 5rem;
     }
 
     p {
+        color:var(--color-paragraph-secondary);
         grid-area: paragraph;
         font-size: 16px;
-        color: var(--color-muted);
         text-align: left;
     }
 
@@ -570,9 +579,17 @@ margin-top: 5rem;
     }
     
     .feature-item {
+        width: 360px;
+        height: 80px;
         display: flex;
-        gap: .5rem;
         align-items: flex-start;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .feature-text {
+        display: flex;
+        flex-direction: column;
     }
 
     @media (width >= 1400px) {
@@ -620,12 +637,6 @@ margin-top: 5rem;
             justify-content: center;
             align-items: center;
             margin-right: 1rem;
-        }
-        
-        .feature-text {
-            display: flex;
-            flex-direction: column;
-           
         }
         
         .feature-item {
