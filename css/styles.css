@@ -532,17 +532,15 @@ footer {
     }
 }
 
-#app-features {
-
-    
-    margin-top: 5rem;
+.app-features {
+margin-top: 5rem;
 
     h1 {
         grid-area: headline;
         font-size: 27.9px;
         color: var(--color-heading);
         margin-bottom: 1rem;
-        text-align: left;
+        text-align: center;
     }
 
     h5 {
@@ -577,9 +575,6 @@ footer {
         align-items: flex-start;
     }
 
-
-
-
     @media (width >= 1400px) {
         #image {
             display: block;
@@ -594,7 +589,8 @@ footer {
         }
    
         h1 {
-            font-size: 40px
+            font-size: 40;
+            text-align: left;
         }
 
         p {
@@ -645,7 +641,6 @@ footer {
                 margin: 0;
             }
         }
-
     }
 
 }
