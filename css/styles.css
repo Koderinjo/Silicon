@@ -327,6 +327,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 @media (width >= 768px) {
@@ -626,21 +627,8 @@ margin-bottom: 2.5rem;
             height: 120px;
             display: flex;
             align-items: flex-start;
-            gap: .5rem;
-        }
-        
-        .icon-box {
-            min-width: 60px;
-            min-height: 60px;
-            background-color: rgba(99, 102, 241, 0.08);
-            border-radius: 8px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-right: 1rem;
-        }
-        
-        .feature-item {
+            gap: 1.5rem;
+
             h5 {
                 font-size: 20px;
                 margin-bottom: 0.8rem;
@@ -650,8 +638,9 @@ margin-bottom: 2.5rem;
                 font-size: 16px;
                 margin: 0;
             }
-    }
-
+        }
+        
+        
     @media (width >= 1400px) {
         #image {
             display: block;
@@ -674,32 +663,13 @@ margin-bottom: 2.5rem;
           font-size: 18px;  
         }
 
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-        }
-        
         .feature-item {
             width: 345px;
             height: 120px;
             display: flex;
             align-items: flex-start;
-            gap: 3rem;
-        }
-        
-        .icon-box {
-            min-width: 60px;
-            min-height: 60px;
-            background-color: rgba(99, 102, 241, 0.08);
-            border-radius: 8px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-right: 1rem;
-        }
-        
-        .feature-item {
+            gap: 1.5rem;
+
             h5 {
                 font-size: 20px;
                 margin-bottom: 0.8rem;
@@ -710,6 +680,15 @@ margin-bottom: 2.5rem;
                 margin: 0;
             }
         }
-    }
 
+        #features-paragraph {
+            width: 750px;
+        }
+
+    }
+        
+
+
+    
+        
 }
