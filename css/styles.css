@@ -72,6 +72,7 @@ body.dark {
     --color-body:#ffffff;
     --color-btn-circle: #ffffff05;
     --color-paragraph-secondary: #ffffffb3;
+    --color-lightBG: #1c2029; 
 
     header {
         background-color: #1b1f29;
@@ -639,6 +640,7 @@ margin-bottom: 2.5rem;
                 margin: 0;
             }
         }
+    }
         
         
     @media (width >= 1400px) {
@@ -684,11 +686,53 @@ margin-bottom: 2.5rem;
         #features-paragraph {
             width: 750px;
         }
-
     }
-        
+}
 
+#iphone-left-desk {
+    display: none;
+}
 
+#iphone-mid-desk {
+    display: none;
+}
+
+#iphone-right-desk {
+    display: none;
+}
+#iphone-left-tab {
+    display: none;
+}
+#iphone-right-tab {
+    display: none;
+}
+#desktop-text {
+    display: none;
+}
+#tablet-text {
+    display: none;
+}
+
+#howdoesitwork {
+background-color: var(--color-lightBG);
+padding-top: 4rem;
     
-        
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    h1 {
+        color: var(--color-heading);
+        font-size: 27.9px;
+        margin-bottom: 2rem;
+    }
+
+    h4 {
+        color: var(--color-heading);
+        font-size: 21.6px;
+    }
+    
 }
