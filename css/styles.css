@@ -714,9 +714,10 @@ margin-bottom: 2.5rem;
 }
 
 #howdoesitwork {
-background-color: var(--color-lightBG);
-padding-top: 4rem;
-    
+    background-color: var(--color-lightBG);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
     .container {
         display: flex;
         justify-content: center;
@@ -728,11 +729,124 @@ padding-top: 4rem;
         color: var(--color-heading);
         font-size: 27.9px;
         margin-bottom: 2rem;
+        text-align: center;
     }
 
     h4 {
+        max-width: 271px;
         color: var(--color-heading);
         font-size: 21.6px;
+        text-align: center;
+        margin: 2rem auto 1.5rem;
     }
-    
+
+    p {
+        
+        color: var(--color-paragraph-secondary);
+        text-align: center;
+    }
+
+    @media (width >= 768px) {
+        #tablet-text {
+            display: block;
+        }
+
+        #mobile-text {
+            display: none;
+        }
+        
+        #iphone-left-tab {
+            display: block;
+        }
+        
+        #iphone-right-tab {
+            display: block;
+        }
+
+        #phone-6 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #iphone-mid-tab {
+            width: 203.32px;
+            height: 410.99px;
+        }
+
+        h1 {
+            font-size: 33.5px;
+        }
+
+        h4 {
+            font-size: 22.7px;
+            max-width: 462px;
+            margin: 2rem auto 1rem;
+        }
+
+        p {
+            font-size: 16px;
+            max-width: 424px;
+            margin: 0 auto;
+        }
+
+    @media (width >= 1400px) {
+        padding-top: 5rem;
+
+        #iphone-left-tab {
+            display: none;
+        }
+
+        #iphone-mid-tab {
+            display: none;
+        }
+
+        #iphone-right-tab {
+            display: none;
+        }
+
+        #iphone-left-desk {
+            display: block;
+        }
+
+        #iphone-mid-desk {
+            display: block;
+        }
+
+        #iphone-right-desk {
+            display: block;
+        }
+
+        #phone-6 {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: row;
+            gap: 5rem;
+        }
+
+        #tablet-text {
+            display: none;
+        }
+
+        #desktop-text {
+            display: block;
+        }
+        
+        h1 {
+            font-size: 40px;
+        }
+
+        h4 {
+            font-size: 24px;
+            max-width: 308px;
+        }
+
+        p {
+            font-size: 16px;
+            max-width: 636px;
+            color: var(--color-body);
+        }
+    }
+
+    }
+
 }
