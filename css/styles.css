@@ -713,7 +713,7 @@ margin-bottom: 2.5rem;
     display: none;
 }
 
-#howdoesitwork {
+#how-does-it-work {
     background-color: var(--color-lightBG);
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -788,6 +788,7 @@ margin-bottom: 2.5rem;
             max-width: 424px;
             margin: 0 auto;
         }
+    }
 
     @media (width >= 1400px) {
         padding-top: 5rem;
@@ -847,6 +848,46 @@ margin-bottom: 2.5rem;
         }
     }
 
+}
+
+#only-desktop {
+    
+    h2 {
+        color: var(--color-heading);
+        font-size: 32px;
+        margin-top: 10rem;
+        margin-bottom: 2rem;
     }
 
+    .listur {
+        
+        li {
+            list-style: none;
+            color: var(--color-body);
+            
+        }
+        
+        i {
+            margin-bottom: 1rem;
+            margin-right: 2rem;
+        }
+    }
+
+    #learn-more {
+        width: 159px;
+        height: 44px;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+
+    .container {
+        display:flex;
+        flex-direction: flex;
+        height: 1076px;
+        width: 1080px;
+        
+        
+    }
+    
+   
 }
