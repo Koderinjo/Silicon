@@ -969,25 +969,29 @@ margin-bottom: 2.5rem;
 } 
 
 #testimonials {
-    background-color: var(--color-lightBG);
-    
-    .container {
-        display: flex;
-        justify-content: center;
-    }
-    
-    #teston {
-        display: flex;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-        gap: 5rem;
-    }
-    
-    h1 {
-        font-size: 40px;
-        width: 306px;
-        height: 104px;
-    }
+    display: none;
 
+    @media (width >= 1400px) {
+        display: block;
+        background-color: var(--color-lightBG);
+        
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+        
+        #clients {
+            display: flex;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            gap: 5rem;
+        }
+        
+        h1 {
+            font-size: 40px;
+            width: 306px;
+            height: 104px;
+        }
+    }
 }
 
