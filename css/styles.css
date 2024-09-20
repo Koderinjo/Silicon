@@ -1015,12 +1015,15 @@ margin-bottom: 2.5rem;
     }
 
     .btn-circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 36px;
         height: 36px;
-        background-color: var(--color-lightBG);
         border-radius: 50%;
-        border: 1px solid grey;
-        
+        background-color: var(--color-lightBG);
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        flex-shrink: 0; /* Prevents shrinking */
     }
 
     .accordion-container {
@@ -1055,15 +1058,8 @@ margin-bottom: 2.5rem;
         text-align: left;
         font-size: 16px;
         font-weight: bold;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         transition: background-color 0.3s ease;
-    }
-
-    .accordion-header span {
-        flex-grow: 1; /* Takes up available space */
-        margin-right: 10px; /* Adds space between text and button */
+        padding-right: 2rem;
     }
     
     .accordion-header:hover {
@@ -1092,7 +1088,6 @@ margin-bottom: 2.5rem;
     .accordion-item.active .btn-circle {
         background-color: var(--color-primary); /* Change color when active */
     }
-
     
 
     @keyframes slideDown {
