@@ -716,7 +716,7 @@ margin-bottom: 2.5rem;
 #how-does-it-work {
     background-color: var(--color-lightBG);
     padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-bottom: 5.5rem;
 
     .container {
         display: flex;
@@ -851,6 +851,12 @@ margin-bottom: 2.5rem;
 }
 
 #only-desktop {
+    display: none;
+
+    @media (width >= 1400px) {
+        display: block;
+    }
+
     margin-bottom: 10rem;
 
     h2 {
@@ -906,7 +912,7 @@ margin-bottom: 2.5rem;
         margin-left: .1rem;
         margin-top: auto;
         margin-bottom: auto;
-       
+    
     }
 
     #bottom-right {
@@ -956,5 +962,4 @@ margin-bottom: 2.5rem;
             color: var(--color-body);
         }
     }
-   
 }
