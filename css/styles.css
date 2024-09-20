@@ -113,6 +113,10 @@ a:hover {
     text-decoration: underline;
 }
 
+h1 {
+    color: var(--color-heading);
+}
+
 .btn-primary {
     background-color:var(--color-primary) ;
     color: var(--color-white);
@@ -850,7 +854,7 @@ margin-bottom: 2.5rem;
 
 }
 
-#only-desktop {
+#only-desktop { 
     display: none;
 
     @media (width >= 1400px) {
@@ -962,4 +966,28 @@ margin-bottom: 2.5rem;
             color: var(--color-body);
         }
     }
+} 
+
+#testimonials {
+    background-color: var(--color-lightBG);
+    
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #teston {
+        display: flex;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        gap: 5rem;
+    }
+    
+    h1 {
+        font-size: 40px;
+        width: 306px;
+        height: 104px;
+    }
+
 }
+
