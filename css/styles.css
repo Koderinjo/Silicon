@@ -16,7 +16,6 @@
     --color-btn-circle: #ffffff;
     --color-paragraph-secondary: #585C7B;
 
-
     /* Brand Colors */
     --color-primary: #6366F1;
     --color-gradient: linear-gradient(0deg, rgba(99,102,241,0.1) 0%, rgba(218,70,239,0.05) 42%, rgba(241,244,253,0.07) 83%);
@@ -75,6 +74,8 @@ body.dark {
     --color-btn-circle: #ffffff05;
     --color-paragraph-secondary: #ffffffb3;
     --color-lightBG: #1c2029; 
+    --color-divider: rgba(255, 255, 255, 0.15);
+    --color-white: #131022;
 
     --shadow-S: 0px 4.4px 12px -1px rgba(254, 254, 254, 0.06), 0px 2px 6.4px -1px rgba(255, 255, 255, 0.03);
     --shadow-M: 0px 4.4px 20px rgba(255, 255, 255, 0.05), 0px 4px 9px rgba(255, 255, 255, 0.03);
@@ -120,7 +121,7 @@ a:hover {
     text-decoration: underline;
 }
 
-h1, h2 {
+h1, h2, h3, h4, h5 {
     color: var(--color-heading);
 }
 
@@ -179,7 +180,7 @@ p {
     font-size: 12px;
     cursor: pointer;
     box-shadow: var(--shadow-S);
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.2s ease;
 }
 .btn-circle:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25), 
@@ -1005,6 +1006,13 @@ margin-bottom: 2.5rem;
 #FAQ {
     text-decoration: none;
 
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     a img:hover {
         box-shadow: var(--shadow-XL);
         border-radius: 8px;
@@ -1013,8 +1021,24 @@ margin-bottom: 2.5rem;
     #icon-box-phone, #icon-box-message {
         display: none;
     }
+    
+
+    .text {
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+
+    .btn-primary {
+        width: 162px;
+        height: 49.5px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        border-radius: 6px;
+    }
 
     .btn-circle {
+        margin-left: 1rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1022,26 +1046,31 @@ margin-bottom: 2.5rem;
         height: 36px;
         border-radius: 50%;
         background-color: var(--color-lightBG);
-        transition: background-color 0.3s ease, box-shadow 0.3s ease;
-        flex-shrink: 0; /* Prevents shrinking */
+        transition: background-color 0.3s ease;
+        flex-shrink: 0;
     }
 
-    .accordion-container {
-        max-width: 800px;
-        width: 100%;
-        margin: 20px auto;
-        padding: 10px;
-        background-color: transparent;
-        border-radius: 12px;
-        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+
+    .accordion-content {
+        padding: 0px;
+        border-top: 1px solid var(--color-divider);
+        font-size: 14px;
+        
+
+        p {
+            font-size: 14px;
+            color: var(--color-paragraph-secondary);
+        }
     }
-    
+
     .accordion-item {
-        margin-bottom: 10px;
-        border-radius: 12px;
+        background-color: var(--color-white);
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
         width: 100%;
+        border: 1px solid var(--color-divider);
         overflow: hidden;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); */
     }
     
     .accordion-header {
@@ -1051,27 +1080,28 @@ margin-bottom: 2.5rem;
         font-family: inherit;
         width: 100%;
         padding: 15px;
-        background-color: #ffffff;
+        background-color: var(--color-white);
         border: none;
-        border-radius: 12px;
+        border-radius: 0px;
         cursor: pointer;
         text-align: left;
         font-size: 16px;
-        font-weight: bold;
+        font-weight: 600;
+        color: var(--color-heading);
         transition: background-color 0.3s ease;
-        padding-right: 2rem;
+        padding-right: 1.5rem;
     }
     
     .accordion-header:hover {
         background-color: rgba(99, 101, 241, 0.221);
     }
-    .accordion-header:focus {
-        background-color: none;
-    }
+    /* .accordion-header:focus {
+        background-color: rgba(99, 101, 241, 0.221);
+    } */
     
     .accordion-content {
         padding: 20px;
-        background-color: #ffffff;
+        background-color: var(--color-white);
         display: none;
         animation: slideDown 0.3s ease;
         text-decoration: none;
@@ -1080,14 +1110,25 @@ margin-bottom: 2.5rem;
     .accordion-item.active .accordion-content {
         display: block;
     }
+
+    .accordion-header .btn-circle i {
+        transition: transform 0.3s ease, color 0.3s ease;
+        transform: rotate(0deg);
+        color: var(--color-heading);
+    }
     
     .accordion-item.active .accordion-header .btn-circle i {
         transform: rotate(180deg);
+        transition: transform 0.3s;
+        color: #fff;
     }
 
     .accordion-item.active .btn-circle {
-        background-color: var(--color-primary); /* Change color when active */
+        background-color: var(--color-primary);
+        box-shadow: 0px -8px 18px -8px rgba(99, 102, 241, 0.9);
     }
+    
+   
     
 
     @keyframes slideDown {

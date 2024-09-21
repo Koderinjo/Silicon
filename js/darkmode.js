@@ -49,22 +49,22 @@ document.addEventListener('DOMContentLoaded', function () {
           // Toggle the "active" class to open/close the accordion
           accordionItem.classList.toggle('active');
 
-          // Toggle the plus/minus icon
-          const icon = header.querySelector('.icon');
-          if (accordionItem.classList.contains('active')) {
-              icon.textContent = '-';
-          } else {
-              icon.textContent = '+';
-          }
-
           // Close any other opened accordion items
           const openAccordions = document.querySelectorAll('.accordion-item.active');
           openAccordions.forEach(item => {
               if (item !== accordionItem) {
                   item.classList.remove('active');
-                  item.querySelector('.icon').textContent = '+';
+                  
               }
           });
+
+          // Remove focus after click to prevent lingering hover effect on mobile
+          header.blur(); // Removes focus after click
+      });
+
+      // Add touchstart event to remove hover or active class on mobile devices
+      header.addEventListener('touchstart', () => {
+          header.classList.remove('hover'); // Remove hover or active classes
       });
   });
 });
