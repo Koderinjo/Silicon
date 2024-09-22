@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
           openAccordions.forEach(item => {
               if (item !== accordionItem) {
                   item.classList.remove('active');
-                  
+                  item.querySelector('.icon').textContent = '+';
               }
           });
 

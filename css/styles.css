@@ -1212,14 +1212,93 @@ margin-bottom: 2.5rem;
             flex-direction: column;
             margin-top: 8rem;
           }
-          
-
-
-    
-        
     }
 
-
-
-
 }
+
+#subscribe {
+    h2 {
+        font-size: 21.6;
+        font-weight: 800;
+    }
+}
+
+.subscribe-container {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.fa-envelope {
+  font-size: 20px; /* Adjust icon size */
+  color: #b0b0b0; /* Adjust icon color */
+}
+
+.subscribe-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 25px 0 0 25px;
+}
+
+.subscribe-button {
+  background-color: #635dff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-button:hover {
+  background-color: #5145f2;
+}
+
+.subscribe-input::placeholder {
+  color: #b0b0b0;
+}
+
+.background-card {
+    width: 366px;
+    height: 251px;
+    background-color: var(--color-lightBG);
+    border-radius: 8px;
+}
+.background-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    padding: 20px;
+}
+#bell {
+    grid-column: 1;
+    text-align: center;
+}
+.sub-to {
+    grid-column: 2 /;
+    text-align: center;
+  }
+  .subscribe-input {
+    grid-column: 1;
+    flex: 1;                         /* Input takes up the remaining space */
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 25px 0 0 25px;
+  }
