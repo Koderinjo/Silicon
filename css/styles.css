@@ -1237,10 +1237,10 @@ margin-bottom: 2.5rem;
         }
 
     }
-    
-
-        
-    
+       
+.sub-text-desktop {
+    display: none;
+}  
 
 .background-card {
     display: grid;
@@ -1269,7 +1269,6 @@ margin-bottom: 2.5rem;
     height: 52px;
     border: 1px solid #D4D7E5;
     position: relative;
-    overflow: 
 }
 
 
@@ -1346,33 +1345,73 @@ margin-bottom: 2.5rem;
 }
 
 @media (min-width: 768px) {
-
-    h2 {
-        font-size: 22.7px;
-    }
-   
-
     .background-card {
-        width: 705px;
-        height: 223px;
         display: flex;
-        flex-direction: row;
         justify-content: center;
         align-items: center;
+        width: 705px;
+        height: 223px;
         gap: 0rem;
     }
 
     .sub-text {
-    margin-left: 3rem;
-    padding: 0;
-    margin-bottom: 2rem;
+        margin-left: 3rem;
+        padding: 0;
+        margin-bottom: 2rem;
+
+        h2 {
+            font-size: 22.7px;
+        }
 
     }
 
     .subscribe-container {
         width: 320px;
         height: 52px;
-        /* margin-left: 4rem; */
+        
     }
 }
 
+@media (min-width: 1400px) {
+
+    .sub-text {
+        display: none;
+    }
+    
+    #bell {
+        margin: 0;
+        padding: 0;
+    }
+
+    
+   
+    .background-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1296px;
+        height: 223px;
+        gap: 4rem;
+    }
+
+    .sub-text-desktop {
+        display: block;
+        width: 416px;
+        height: 68px;
+
+        h4 {
+            font-size: 24px;
+            font-weight: 900; 
+         }
+    }
+
+    .subscribe-container {
+        width: 472px;
+        height: 52px;
+    }
+
+    .subscribe-input {
+        min-width: 300px;
+    }
+
+}
